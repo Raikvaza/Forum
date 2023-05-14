@@ -1,4 +1,4 @@
-# Forum #
+# Forum
 
 This project consists in creating a web forum that allows :
 
@@ -7,58 +7,61 @@ This project consists in creating a web forum that allows :
     liking and disliking posts and comments.
     filtering posts.
 
-### How to go run? ####
+### How to go run?
 
-firstly u need to enter newBackend dir
+First, u need to enter backend directory
+
 ```
 go run main.go
+
 ```
-secondly u need exit newBackend dir and to enter client dir
+
+Next, enter the client directory and run these commands:
+
 ```
 npm install
 ```
+
 ```
 npm start
 ```
-on this moment u start forum on 3000 port(front) and 8080 port(back)
 
-### How to use ###
+After that, React will run the application at localhost:3000 port
 
-you must first sign up, second move is log in with your login and password. Now u can create post comment other person post, like and dislike. Take a filter to post.
+### How to use
 
-### Audit link ###
+Authorization is required prior to the usage of the forum itself. After you log in, you can create posts, comment other's posts, like and dislike them and etc.
 
-https://github.com/01-edu/public/tree/master/subjects/forum/audits
+### If you want to use makefile and docker, use this command###
 
-
-### If u wanna use makefile and docker use this command###
 ```
 make dcrun
 ```
-wait the end client image creating
+
+Wait for the completion of the image creation
+
 ```
 make dbrun
 ```
-wait the end back image creating
 
-# go to link localhost:3000/ #
+Wait for completion of the db image creation
 
-if u wanna delete all image use this command
+# go to link localhost:3000/
+
+if you want to delete all images, use this command
+
 ```
 make dstop
 ```
-
 
 ```
 make dclear
 ```
 
+### Project made by
 
-### Project made by ###
-@aromanov captain
+@aromanov team-lead
 
 @diyar.ildart backend
 
 @aseitkhan frontend
-
-
